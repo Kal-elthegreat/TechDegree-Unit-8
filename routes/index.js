@@ -1,10 +1,11 @@
 var express = require('express');
 var router = express.Router();
+var Book = require("../models").Book;
 
 /* GET home page. */
 
 router.get('/',(req,res) => { // home page
-  res.redirect('/books')// redirect to /books
+  res.redirect('/books')
 })
 
 router.get('/books',(req,res) => {
