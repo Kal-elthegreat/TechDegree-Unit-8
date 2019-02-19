@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-var app = require('../apps');
+var app = require('../app');
 var debug = require('debug')('techdegree-unit-8:server');
 var http = require('http');
 var sequelize = require("../models").sequelize
