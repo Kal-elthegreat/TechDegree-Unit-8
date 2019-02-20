@@ -4,11 +4,15 @@ var Book = require("../models").Book;
 
 
 router.get('/books',(req,res) => {
-    res.render('index')
-  })
+    Book.findAll().then(books => {
+        res.render('index', { books: books, },
+        //  console.log(books)
+         )
+      })
+    })
   
   router.get('/books/new',(req,res) => {
-    res.render('new-book',{book:Book.build(),title: "Kiel Book"});
+    res.render('new-book');
   })
   
   // post books/new 
@@ -29,5 +33,6 @@ router.get('/books',(req,res) => {
   router.post('/books/:id/delete',(req,res) => {
     //req
   })
+  
 
   module.exports = router;
