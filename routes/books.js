@@ -15,11 +15,11 @@ router.get('/books',(req,res) => {
   })
   
   // post books/new  
-  router.post('/books',(req,res) => {
-    Book.create(req.body).then( () => { // create new book and post to /books route
-      res.redirect('/books')
-    })
-  })
+  // router.post('/books',(req,res) => {
+  //   Book.create(req.body).then( () => { // create new book and post to /books route
+  //     res.redirect('/books')
+  //   })
+  // })
   
   // get books/id (update-book)
   router.get('/books/:id', (req,res) => {
@@ -32,14 +32,15 @@ router.get('/books',(req,res) => {
   router.post('/books/:id',(req,res) => {
     Book.findById(req.params.id).then(books => {
       return books.update(req.body)
-    }).then(books => {
-      res.redirect('/books/')
+    }).then( () => {
+      res.redirect('/books')
     })
     //req
   })
   
   //post books/:id/delete (index.pug w/o deleted book)
   router.post('/books/:id/delete',(req,res) => {
+    
     //req
   })
   
