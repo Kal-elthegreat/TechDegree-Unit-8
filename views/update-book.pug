@@ -2,7 +2,7 @@ extends layout.pug
 
 block content
   h1 Update Book
-  form(method='post', action="/books/")
+  form(action="/books", method="post")
     p
       label(for='title') Title
       input#title(name='title', type='text', value=books.title) 

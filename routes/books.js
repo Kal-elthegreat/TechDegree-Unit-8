@@ -14,10 +14,10 @@ router.get('/books',(req,res) => {
     res.render('new-book', ); // render new-book form
   })
   
-  // post books/new 
+  // post books/new  
   router.post('/books',(req,res) => {
     Book.create(req.body).then( () => { // create new book and post to /books route
-      res.redirect('/books/')
+      res.redirect('/books')
     })
   })
   
@@ -29,10 +29,10 @@ router.get('/books',(req,res) => {
   })
   
   //post books/:id (updated book)
-  router.put('/books/:id',(req,res) => {
-    Book.findById(req.params.id).then( books => {
+  router.post('/books/:id',(req,res) => {
+    Book.findById(req.params.id).then(books => {
       return books.update(req.body)
-    }).then( books => {
+    }).then(books => {
       res.redirect('/books/')
     })
     //req
