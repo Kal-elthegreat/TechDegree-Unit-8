@@ -14,22 +14,21 @@
 
     X get / - Home route should redirect to the /books route.
     X get /books - Shows the full list of books.
-    get /books/new - Shows the create new book form. 
-    post /books/new - Posts a new book to the database.
-    get /books/:id - Shows book detail form.
-    post /books/:id - Updates book info in the database.
-    post /books/:id/delete - Deletes a book. Careful, this can’t be undone. It can be helpful to create a new “test” book to test deleting.
-    Set up a custom error handler middleware function that logs the error to the console and renders an “Error” view with a friendly message for the user. This is useful if the server encounters an error, like trying to view the “Books Detail” page for a book :id that doesn’t exist. See the error.html file in the example-markup folder to see what this would look like.
-    Set up a middleware function that returns a 404 NOT FOUND HTTP status code and renders a "Page Not Found" view when the user navigates to a non-existent route, such as /error. See the page_found.html file in the example markup folder for an example of what this would look like.
+    X get /books/new - Shows the create new book form. 
+    X post /books/new - Posts a new book to the database.
+    X get /books/:id - Shows book detail form.
+    X post /books/:id - Updates book info in the database.
+    X post /books/:id/delete - Deletes a book. Careful, this can’t be undone. It can be helpful to create a new “test” book to test deleting.
+    X Set up a custom error handler middleware function that logs the error to the console and renders an “Error” view with a friendly message for the user. This is useful if the server encounters an error, like trying to view the “Books Detail” page for a book :id that doesn’t exist. See the error.html file in the example-markup folder to see what this would look like.
+    X Set up a middleware function that returns a 404 NOT FOUND HTTP status code and renders a "Page Not Found" view when the user navigates to a non-existent route, such as /error. See the page_found.html file in the example markup folder for an example of what this would look like.
     
     
     /**************** Build your views ********************/
 
-    Use the examples in the example-markup folder to see what your views should look like and what elements they should have. At the very least, you will need the following views:
     X layout.pug - for the boilerplate markup that should be on every page.
     X index.pug - for the main book listing page.
-    new-book.pug - for the new book form.
-    update-book.pug - for the update book form.
+    X new-book.pug - for the new book form.
+    X update-book.pug - for the update book form.
     error.pug - for displaying a user friendly error message.
     page-not-found.pug - for displaying a user friendly “Page Not Found” message.
     X NOTE: You should use Pug to render your views for this project. Avoid using a front end library or framework such as React, Angular, or Vue.
