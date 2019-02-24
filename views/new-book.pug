@@ -3,6 +3,10 @@ extends layout.pug
 block content
   h1 New Book
   form(action="/books/new", method="post")
+    if (errors)
+      h2 Uh Oh!
+      each error in errors
+        p= error.message
     p
       label(for='title') Title
       input#title(name='title', type='text')
