@@ -29,16 +29,16 @@
     X index.pug - for the main book listing page.
     X new-book.pug - for the new book form.
     X update-book.pug - for the update book form.
-    error.pug - for displaying a user friendly error message.
-    page-not-found.pug - for displaying a user friendly “Page Not Found” message.
+    X error.pug - for displaying a user friendly error message.
+    X page-not-found.pug - for displaying a user friendly “Page Not Found” message.
     X NOTE: You should use Pug to render your views for this project. Avoid using a front end library or framework such as React, Angular, or Vue.
 
     /***************** Required fields and forms *****************/
 
-    If the required title and author fields are empty upon form submission, the user should be notified accordingly with a friendly error message on the page. See the form-error.html file for an example of what this will look like.
-    Use Sequelize model validation for validating your form fields. Don't rely simply on HTML5 built in validation.
-    When form labels are clicked, the corresponding input should be placed in the focus state. This is accomplished by matching the input’s id attribute to its label’s for attribute.
-    NOTE: When new book or book detail form is submitted, your app should redirect to the books listing page.
+    X If the required title and author fields are empty upon form submission, the user should be notified accordingly with a friendly error message on the page. See the form-error.html file for an example of what this will look like.
+    X Use Sequelize model validation for validating your form fields. Don't rely simply on HTML5 built in validation.
+    X When form labels are clicked, the corresponding input should be placed in the focus state. This is accomplished by matching the input’s id attribute to its label’s for attribute.
+   X  NOTE: When new book or book detail form is submitted, your app should redirect to the books listing page.
 
     /**************** Styles and Layout **********************/
 
